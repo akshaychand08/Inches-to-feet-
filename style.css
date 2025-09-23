@@ -1,0 +1,70 @@
+/* CSS styles for the converter */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.dimension-converter {
+    background: #ffffff;
+    border: 1px solid #dfe1e5;
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.dimension-converter h3 {
+    margin: 0 0 16px 0;
+    color: #202124;
+    font-size: 22px;
+}
+.dimension-converter .input-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.dimension-converter input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+.dimension-converter .separator {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5f6368;
+}
+.dimension-converter button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.dimension-converter button:hover {
+    background-color: #3367D6;
+}
+.dimension-converter #dimResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f0fe;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #1a73e8;
+    min-height: 24px;
+    font-size: 16px;
+    word-wrap: break-word; /* Prevents long results from overflowing */
+}
